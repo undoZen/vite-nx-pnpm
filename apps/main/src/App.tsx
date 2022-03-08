@@ -1,11 +1,7 @@
-import { Center, Heading } from "ui";
+import { Theme } from "some-component";
 
 function App() {
-  return (
-    <Center h="100vh" w="100vw">
-      <Heading>Hi</Heading>
-    </Center>
-  );
+  return <Theme>Hi</Theme>;
 }
 
 export default App;
