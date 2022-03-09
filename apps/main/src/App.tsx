@@ -1,7 +1,7 @@
-import { Theme } from "some-component";
+import { Theme } from 'some-component'
 
-function App() {
-  return <Theme>Hi</Theme>;
+function App () {
+  return <Theme>Hi</Theme>
 }
 
-export default App;
+export default App

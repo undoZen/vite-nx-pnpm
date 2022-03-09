@@ -1,8 +1,8 @@
-import * as React from "react";
-export function Theme({ children }: React.PropsWithChildren<{}>) {
+import { PropsWithChildren } from 'react'
+export function Theme ({ children }: PropsWithChildren<{}>) {
   return (
     <div>
       <div>{children}</div>
     </div>
-  );
+  )
 }

@@ -1,8 +1,9 @@
 {
-  "compilerOptions": {
-    "lib": ["dom", "ES2015"],
-  },
+  "exclude": ["node_modules"],
   "extends": "tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"]
 }
