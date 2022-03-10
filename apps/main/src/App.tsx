@@ -1,7 +1,8 @@
-import { Theme } from 'some-component'
+import { Theme, add } from 'some-component'
 
 function App () {
-  return <Theme>Hi</Theme>
+  const result = add(1, 2)
+  return <Theme>Hi result: {result}</Theme>
 }
 
 export default App
