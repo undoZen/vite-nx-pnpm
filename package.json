@@ -12,6 +12,10 @@
     "apps/*"
   ],
   "scripts": {
+    "deploy:isolate": "npx pnpm-isolate-workspace --src-files-enable --include-root-deps main",
+    "deploy:install": "cd apps/main/_isolated_ && pnpm i",
+    "deploy:branch": "git-directory-deploy --directory apps/main/_isolated_ --branch deployed",
+    "deploy": "run-s build deploy:isolate deploy:install deploy:branch",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel --continue",
     "lint": "turbo run lint",
@@ -20,6 +24,10 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "git-directory-deploy": "^1.5.1",
+    "npm-run-all": "^4.1.5",
+    "pnpm": "^7.5.0",
+    "pnpm-isolate-workspace": "^0.0.6",
     "prettier": "^2.5.1",
     "turbo": "^1.1.6"
   }

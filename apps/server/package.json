@@ -1,0 +1,15 @@
+{
+  "name": "api-server",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "version": "0.0.0",
+  "scripts": {},
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "scripts": "workspace:*",
+    "tsconfig": "workspace:*"
+  }
+}
