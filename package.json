@@ -12,7 +12,8 @@
     "apps/*"
   ],
   "scripts": {
-    "deploy:isolate": "npx pnpm-isolate-workspace --src-files-enable --include-root-deps main",
+    "pi": "npx --yes pnpm i",
+    "deploy:isolate": "npx --yes pnpm-isolate-workspace --src-files-enable --include-root-deps main",
     "deploy:install": "cd apps/main/_isolated_ && mv .gitignore_dist .gitignore && mv package-prod.json package.json",
     "deploy:branch": "git-directory-deploy --directory apps/main/_isolated_ --branch deployed",
     "deploy": "run-s build deploy:isolate deploy:install deploy:branch",
