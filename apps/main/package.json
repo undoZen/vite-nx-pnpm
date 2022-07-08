@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "pi": "npx --yes pnpm i",
     "dev": "vite --port 3030 --clearScreen false",
     "build": "vite build",
     "lint": "TIMING=1 eslint src/**/* --fix && tsc --noEmit",
