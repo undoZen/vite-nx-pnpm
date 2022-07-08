@@ -1,0 +1,17 @@
+{
+  "name": "scripts",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "files": [
+    "eslint-preset.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

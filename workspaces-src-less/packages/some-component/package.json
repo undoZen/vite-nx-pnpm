@@ -1,0 +1,21 @@
+{
+  "name": "some-component",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react --inject node_modules/scripts/react-shim.js",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react --inject node_modules/scripts/react-shim.js",
+    "lint": "TIMING=1 eslint './src/**' --fix && tsc --noEmit",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

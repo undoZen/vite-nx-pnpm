@@ -1,0 +1,21 @@
+{
+  "name": "main",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "pi": "npx --yes pnpm i",
+    "dev": "vite --port 3030 --clearScreen false",
+    "build": "vite build",
+    "lint": "TIMING=1 eslint src/**/* --fix && tsc --noEmit",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "api-server": "workspace:*",
+    "express": "^4.18.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "some-component": "workspace:*",
+    "st": "^3.0.0"
+  },
+  "devDependencies": {}
+}

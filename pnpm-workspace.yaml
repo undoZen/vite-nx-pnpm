@@ -1,0 +1,5 @@
+packages:
+  - workspaces/apps/server
+  - workspaces/packages/some-component
+  - workspaces/packages/scripts
+  - workspaces/packages/tsconfig
