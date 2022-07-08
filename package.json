@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "deploy:isolate": "npx pnpm-isolate-workspace --src-files-enable --include-root-deps main",
-    "deploy:install": "cd apps/main/_isolated_ && pnpm i",
+    "deploy:install": "cd apps/main/_isolated_ && mv package-prod.json package.json && pnpm i",
     "deploy:branch": "git-directory-deploy --directory apps/main/_isolated_ --branch deployed",
     "deploy": "run-s build deploy:isolate deploy:install deploy:branch",
     "build": "turbo run build",
