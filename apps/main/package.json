@@ -24,6 +24,6 @@
     "scripts": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.7.0",
-    "vite": "beta"
+    "vite": "^3.0.0"
   }
 }
