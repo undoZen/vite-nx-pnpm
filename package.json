@@ -1,5 +1,5 @@
 {
-  "name": "vite-turborepo",
+  "name": "vite-nx-pnpm",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@7.5.0",
